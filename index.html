@@ -1,0 +1,3155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartCity Property - Strategic Land Investment in Western Sydney</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <meta name="description" content="Share land investment at 72 Carr Rd, Bringelly NSW – prime location near Western Sydney International Airport." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ========================================
+       CSS VARIABLES & RESET
+    ======================================== */
+    :root {
+      --primary: #154734;
+      --primary-dark: #0d2f23;
+      --primary-light: #1a5a42;
+      --accent: #c9a962;
+      --accent-light: #dfc88a;
+      --accent-dark: #a88a4a;
+      --white: #ffffff;
+      --off-white: #f9f8f6;
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+      --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--gray-800);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    /* ========================================
+       TYPOGRAPHY
+    ======================================== */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--gray-900);
+    }
+
+    h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); }
+    h3 { font-size: clamp(1.5rem, 2.5vw, 2rem); }
+    h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .section-label::before {
+      content: '';
+      width: 40px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    /* ========================================
+       BUTTONS
+    ======================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.875rem 1.75rem;
+      font-family: var(--font-body);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--primary-dark);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-secondary {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .btn-secondary:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--white);
+    }
+
+    .btn-outline-dark {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    .btn-outline-dark:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    /* ========================================
+       NAVIGATION
+    ======================================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(21, 71, 52, 0.08);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0.875rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-right: auto;
+    }
+
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .logo:hover .logo-mark {
+      transform: scale(1.05);
+    }
+
+    .logo-mark svg {
+      width: 26px;
+      height: 26px;
+      fill: var(--white);
+    }
+
+    .logo-text {
+      font-family: var(--font-display);
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.1;
+    }
+
+    .logo-text span {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.6875rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gray-500);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .nav-link {
+      padding: 0.625rem 1rem;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--gray-700);
+      border-radius: 6px;
+      transition: var(--transition-fast);
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: var(--transition);
+      transform: translateX(-50%);
+    }
+
+    .nav-link:hover {
+      color: var(--primary);
+    }
+
+    .nav-link:hover::after {
+      width: 24px;
+    }
+
+    .nav-cta {
+      margin-left: 1rem;
+      padding: 0.625rem 1.25rem;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-light);
+    }
+
+    .nav-cta::after {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+      width: 32px;
+      height: 24px;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 100%;
+      height: 2px;
+      background: var(--primary);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    /* ========================================
+      HERO SLIDER
+    ======================================== */
+    /* ========================================
+      HERO SLIDER
+    ======================================== */
+    .hero-slider {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: var(--primary);
+      margin-top: 60px;
+    }
+
+    .hero-slider-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slider-container {
+      position: relative;
+      width: 100%;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .slider-track {
+      display: flex;
+      height: 100%;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slide-image-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill; /* Stretches exactly to fit, may distort */
+      
+      background: var(--primary);
+    }
+
+    .slide-content {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      color: #ffffff;
+      max-width: 600px;
+      text-align: center;
+      animation: captionFadeIn 0.8s ease-out;
+    }
+
+    .slide-content h1 {
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    .slide-content p {
+      color: #ffffff;
+    }
+
+    @keyframes captionFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .slide-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .slider-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 56px;
+      height: 56px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: var(--transition);
+      backdrop-filter: blur(10px);
+    }
+
+    .slider-nav:hover {
+      background: rgba(255, 255, 255, 0.25);
+      border-color: var(--white);
+    }
+
+    .slider-nav svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--white);
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .slider-prev {
+      left: 2rem;
+    }
+
+    .slider-next {
+      right: 2rem;
+    }
+
+    .slider-dots {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 1rem;
+      z-index: 10;
+    }
+
+    .slider-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .slider-dot.active {
+      background: var(--white);
+      width: 32px;
+      border-radius: 6px;
+    }
+
+    .slider-dot:hover {
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .hero-cta-bar {
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      z-index: 5;
+      padding: 1.5rem 2rem;
+    }
+
+    .hero-cta-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-cta-text {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.875rem;
+      margin-left: auto;
+      text-align: right;
+    }
+
+    
+
+    @keyframes captionFadeIn {
+      from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      /* ... rest of media queries ... */
+    }
+
+
+    @media (max-width: 768px) {
+      .hero-slider {
+       height: 80vh;
+       margin-top: 60px;
+      }
+
+      .slide-content {
+       padding: 2rem 1.5rem;
+       max-width: 100%;
+      }
+
+      .slide-content h1 {
+       font-size: clamp(1.25rem, 3vw, 1.75rem);
+      }
+
+      .slide-content p {
+       font-size: 0.9rem;
+      }
+
+      .slider-nav {
+       width: 44px;
+       height: 44px;
+      }
+
+      .slider-nav svg {
+       width: 20px;
+       height: 20px;
+      }
+
+      .slider-prev {
+       left: 1rem;
+      }
+
+      .slider-next {
+       right: 1rem;
+      }
+
+      .slider-dots {
+       bottom: 80px;
+      }
+
+      .hero-cta-inner {
+       flex-direction: column;
+       gap: 1rem;
+      }
+
+      .hero-cta-text {
+       margin-left: 0;
+       text-align: center;
+       width: 100%;
+      }
+
+      .slide-cta {
+       width: 100%;
+      }
+
+      .slide-cta .btn {
+       flex: 1;
+      }
+    }
+    /* ========================================
+       ABOUT SECTION
+    ======================================== */
+    .about {
+      padding: 6rem 2rem;
+      background: var(--white);
+    }
+
+    .about-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      position: relative;
+    }
+
+    .about-img {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: var(--transition);
+      background: var(--gray-200);
+    }
+
+    .about-img:hover img {
+      transform: scale(1.05);
+    }
+
+    .about-img:first-child {
+      grid-column: span 2;
+    }
+
+    .about-img:first-child img {
+      height: 280px;
+    }
+
+    .about-content h2 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text {
+      color: var(--gray-600);
+      font-size: 1.0625rem;
+      margin-bottom: 1.25rem;
+      line-height: 1.8;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+
+    .about-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .about-feature-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(21, 71, 52, 0.08);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .about-feature-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--primary);
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .about-feature h4 {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      margin-bottom: 0.25rem;
+    }
+
+    .about-feature p {
+      font-size: 0.875rem;
+      color: var(--gray-500);
+    }
+
+    /* ========================================
+       WHY INVEST SECTION
+    ======================================== */
+    .why-invest {
+      padding: 6rem 2rem;
+      background: var(--primary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-invest::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(circle at 10% 20%, rgba(201, 169, 98, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(201, 169, 98, 0.1) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    .why-invest-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .why-invest-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .why-invest .section-label {
+      color: var(--accent-light);
+    }
+
+    .why-invest .section-label::before {
+      background: var(--accent-light);
+    }
+
+    .why-invest h2 {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .why-invest-subtitle {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 1.125rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    /* Why Invest Image Gallery */
+    .why-invest-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 4rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-slow);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .gallery-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(21, 71, 52, 0.8) 0%, transparent 60%);
+      transition: var(--transition);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-item:hover::after {
+      background: linear-gradient(to top, rgba(21, 71, 52, 0.9) 0%, transparent 80%);
+    }
+
+    .gallery-item-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.25rem;
+      z-index: 2;
+    }
+
+    .gallery-item h4 {
+      color: var(--white);
+      font-size: 1rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .gallery-item p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.8125rem;
+    }
+
+    /* Why Invest Cards */
+    .why-invest-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .why-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 2rem;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: var(--transition);
+    }
+
+    .why-card:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(201, 169, 98, 0.3);
+      transform: translateY(-4px);
+    }
+
+    .why-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .why-card-icon {
+      width: 56px;
+      height: 56px;
+      background: rgba(201, 169, 98, 0.15);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .why-card-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .why-card h3 {
+      color: var(--white);
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .why-card p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9375rem;
+      line-height: 1.7;
+    }
+
+    /* ========================================
+       NEWS TICKER SECTION
+    ======================================== */
+    .news-ticker-section {
+      padding: 4rem 0;
+      background: var(--off-white);
+      overflow: hidden;
+    }
+
+    .news-ticker-header {
+      text-align: center;
+      padding: 0 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .news-ticker-header h2 {
+      color: var(--primary);
+    }
+
+    .ticker-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 1rem 0;
+    }
+
+    .ticker-wrapper::before,
+    .ticker-wrapper::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100px;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .ticker-wrapper::before {
+      left: 0;
+      background: linear-gradient(to right, var(--off-white), transparent);
+    }
+
+    .ticker-wrapper::after {
+      right: 0;
+      background: linear-gradient(to left, var(--off-white), transparent);
+    }
+
+    .ticker-track {
+      display: flex;
+      gap: 2rem;
+      animation: ticker 40s linear infinite;
+      width: max-content;
+    }
+
+    .ticker-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .ticker-item {
+      flex-shrink: 0;
+      width: 320px;
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .ticker-item:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .ticker-item-image {
+      width: 100%;
+      height: 200px;
+      background: var(--gray-200);
+      overflow: hidden;
+    }
+
+    .ticker-item-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .ticker-item:hover .ticker-item-image img {
+      transform: scale(1.05);
+    }
+
+    .ticker-item-content {
+      padding: 1.5rem;
+    }
+
+    .ticker-item-tag {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: rgba(21, 71, 52, 0.08);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 50px;
+      margin-bottom: 0.75rem;
+    }
+
+    .ticker-item h4 {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .ticker-item p {
+      font-size: 0.875rem;
+      color: var(--gray-500);
+      line-height: 1.5;
+    }
+
+    /* ========================================
+       FEATURED PROJECT SECTION
+    ======================================== */
+    .featured-project {
+      padding: 6rem 2rem;
+      background: var(--white);
+    }
+
+    .featured-project-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .featured-project-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .featured-project h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .featured-project-subtitle {
+      color: var(--gray-500);
+      font-size: 1.125rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .project-showcase {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .project-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .project-img {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 4/3;
+      background: var(--gray-200);
+      position: relative;
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .project-img:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-img:first-child {
+      grid-column: span 2;
+      aspect-ratio: 16/9;
+    }
+
+    .project-img-placeholder {
+      display: none;
+    }
+
+    .project-badge {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-details h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .project-location {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gray-600);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .project-location svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .project-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .project-stat {
+      background: var(--white);
+      padding: 1.25rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .project-stat-value {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .project-stat-label {
+      font-size: 0.8125rem;
+      color: var(--gray-500);
+      margin-top: 0.25rem;
+    }
+
+    .project-features-list {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .project-features-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--gray-200);
+      color: var(--gray-700);
+      font-size: 0.9375rem;
+    }
+
+    .project-features-list li:last-child {
+      border-bottom: none;
+    }
+
+    .project-features-list svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2;
+      flex-shrink: 0;
+    }
+
+    .project-cta {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .project-cta .btn {
+      flex: 1;
+    }
+
+      
+    /* ========================================
+      PROJECT LOCATIONS SECTION
+    ======================================== */
+    .project-locations {
+      padding: 6rem 2rem;
+      background: var(--primary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-locations::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+       radial-gradient(circle at 20% 30%, rgba(201, 169, 98, 0.1) 0%, transparent 40%),
+       radial-gradient(circle at 80% 70%, rgba(201, 169, 98, 0.08) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    .project-locations-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .project-locations-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .project-locations .section-label {
+      color: var(--accent-light);
+    }
+
+    .project-locations .section-label::before {
+      background: var(--accent-light);
+    }
+
+    .project-locations h2 {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .project-locations-subtitle {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 1.125rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .locations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .location-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .location-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(201, 169, 98, 0.3);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .location-card-image {
+      position: relative;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .location-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .location-img-placeholder {
+      display: none;
+    }
+
+    .location-card-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .location-card-content {
+      padding: 1.75rem;
+    }
+
+    .location-card h3 {
+      color: var(--white);
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .location-card-address {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .location-card-address svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2;
+      flex-shrink: 0;
+    }
+
+    .location-card-features {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .location-card-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem;
+      padding: 0.5rem 0;
+    }
+
+    .location-card-features svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2.5;
+      flex-shrink: 0;
+    }
+
+    .btn-sm {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.875rem;
+      width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+      .locations-grid {
+       grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .locations-grid {
+       grid-template-columns: 1fr;
+       max-width: 450px;
+       margin: 0 auto;
+      }
+    }
+
+    /* ========================================
+       SERVICES SECTION
+    ======================================== */
+    .services {
+      padding: 6rem 2rem;
+      background: var(--off-white);
+    }
+
+    .services-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .services-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .services h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .services-subtitle {
+      color: var(--gray-500);
+      font-size: 1.125rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 2rem;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--gray-100);
+    }
+
+    .service-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      transform: scaleX(0);
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+      border-color: transparent;
+    }
+
+    .service-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .service-number {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 700;
+      color: #1a5a42;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: var(--white);
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      color: var(--gray-500);
+      font-size: 0.9375rem;
+      line-height: 1.7;
+    }
+
+    /* ========================================
+       CONTACT SECTION
+    ======================================== */
+    .contact {
+      padding: 6rem 2rem;
+      background: var(--white);
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 4rem;
+    }
+
+    .contact-info h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .contact-text {
+      color: var(--gray-500);
+      font-size: 1.0625rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.8;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .contact-item-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--primary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-item-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--white);
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .contact-item-text h4 {
+      font-family: var(--font-body);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-item-text p,
+    .contact-item-text a {
+      font-size: 1rem;
+      color: var(--gray-800);
+      transition: var(--transition-fast);
+    }
+
+    .contact-item-text a:hover {
+      color: var(--primary);
+    }
+
+    .contact-form-wrapper {
+      background: var(--off-white);
+      border-radius: 20px;
+      padding: 2.5rem;
+    }
+
+    .contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-group.full-width {
+      grid-column: span 2;
+    }
+
+    .form-group label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--gray-700);
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 0.875rem 1rem;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--gray-800);
+      background: var(--white);
+      border: 2px solid var(--gray-200);
+      border-radius: 10px;
+      transition: var(--transition-fast);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(21, 71, 52, 0.1);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--gray-400);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-checkbox {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .form-checkbox input {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--primary);
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .form-checkbox label {
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      line-height: 1.5;
+    }
+
+    .form-checkbox a {
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .form-checkbox a:hover {
+      text-decoration: underline;
+    }
+
+    .form-submit .btn {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    /* ========================================
+       FOOTER
+    ======================================== */
+    .footer {
+      background: var(--primary-dark);
+      padding: 4rem 2rem 2rem;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-brand p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9375rem;
+      margin: 1.5rem 0;
+      max-width: 300px;
+      line-height: 1.7;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .footer-social a:hover {
+      background: var(--accent);
+    }
+
+    .footer-social svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--white);
+    }
+
+    .footer-links h4 {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9375rem;
+      transition: var(--transition-fast);
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.875rem;
+    }
+
+    .footer-bottom a {
+      color: rgba(255, 255, 255, 0.5);
+      transition: var(--transition-fast);
+    }
+
+    .footer-bottom a:hover {
+      color: var(--accent);
+    }
+
+    /* ========================================
+       SCROLL TO TOP
+    ======================================== */
+    .scroll-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-lg);
+      z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: var(--transition);
+    }
+
+    .scroll-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-top:hover {
+      background: var(--primary-light);
+      transform: translateY(-4px);
+    }
+
+    .scroll-top svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--white);
+      fill: none;
+      stroke-width: 2;
+    }
+
+    /* ========================================
+       ANIMATIONS
+    ======================================== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ========================================
+       RESPONSIVE
+    ======================================== */
+    @media (max-width: 1024px) {
+      .about-container,
+      .project-showcase,
+      .contact-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .why-invest-gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-invest-grid,
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: var(--shadow-lg);
+        border-top: 1px solid var(--gray-100);
+      }
+
+      .nav-menu.active {
+        display: flex;
+      }
+
+      .nav-cta {
+        margin: 0.5rem 0 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .slide {
+        aspect-ratio: 4/3;
+        min-height: 400px;
+      }
+
+      .slider-nav {
+        width: 44px;
+        height: 44px;
+      }
+
+      .slider-prev { left: 1rem; }
+      .slider-next { right: 1rem; }
+
+      .about-features {
+        grid-template-columns: 1fr;
+      }
+
+      .why-invest-gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .why-invest-grid,
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-images {
+        grid-template-columns: 1fr;
+      }
+
+      .project-img:first-child {
+        grid-column: span 1;
+      }
+
+      .contact-form {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full-width {
+        grid-column: span 1;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-brand p {
+        max-width: none;
+      }
+
+      .footer-social {
+        justify-content: center;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========================================
+       NAVIGATION
+  ======================================== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+            <path d="M9 22V12h6v10"/>
+            <text x="12" y="14" font-size="10" font-weight="bold" fill="#154734" text-anchor="middle" dominant-baseline="middle">S</text>
+          </svg>
+        </div>
+        <div class="logo-text">
+          SmartCity
+          <span>Property Group </span>
+        </div>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#why-invest" class="nav-link">Why Invest</a>
+        <a href="#project" class="nav-link">Projects</a>
+        <a href="#locations" class="nav-link">Locations</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link nav-cta">Contact Us</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <!-- ========================================
+       HERO SLIDER
+  ======================================== -->
+  <section id="home" class="hero-slider">
+    <div class="hero-slider-inner">
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <img src="greendale .png" alt="Greendale Road Investment" class="slide-image-img">
+            <div class="slide-content">
+              <h1>Greendale Road Investment</h1>
+              <p>Prime land investment opportunity in Western Sydney's fastest-growing corridor.</p>
+              
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img src="72 Carr Road.png" alt="Bringelly Grove Estate" class="slide-image-img">
+            <div class="slide-content">
+              <h1>Bringelly Grove Estate</h1>
+              <p>Strategic land sharing model positioned for capital appreciation.</p>
+              
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <img src="Bringelly.png" alt=" Location-Bringelly" class="slide-image-img">
+            <div class="slide-content">
+              <h1>Bringelly</h1>
+              <p>Building wealth through strategic land investment in Western Sydney.</p>
+              <div class="slide-cta">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="slider-nav slider-prev" id="sliderPrev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24"><polyline points="15,18 9,12 15,6"/></svg>
+        </button>
+        <button class="slider-nav slider-next" id="sliderNext" aria-label="Next slide">
+          <svg viewBox="0 0 24 24"><polyline points="9,18 15,12 9,6"/></svg>
+        </button>
+
+        <!-- Dots -->
+        <div class="slider-dots" id="sliderDots">
+          <button class="slider-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+          <button class="slider-dot" data-slide="1" aria-label="Go to slide 2"></button>
+          <button class="slider-dot" data-slide="2" aria-label="Go to slide 3"></button>
+        </div>
+      </div>
+
+      <!-- CTA Bar -->
+      <div class="hero-cta-bar">
+        <div class="hero-cta-inner">
+          <a href="tel:+61123456789" class="btn btn-primary">📞 Call Now to Reserve</a>
+          <a href="#contact" class="btn btn-outline">Enquire & Secure Slot</a>
+          <span class="hero-cta-text">Expressions of interest – no obligation. Slots allocated on first-come basis.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       ABOUT SECTION
+  ======================================== -->
+  <section id="about" class="about fade-in">
+    <div class="about-container">
+      <div class="about-images">
+        <div class="about-img">
+          <img src="About Us .png" alt="SmartCity Property Office" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-label">About SmartCity Property</span>
+        <h2>Building Wealth Through Strategic Land Investment</h2>
+        
+        <p class="about-text">
+          SmartCity Property specializes in fractional land ownership opportunities in Western Sydney's 
+          high-growth corridors. We make strategic land investment accessible to everyday Australians 
+          through our cooperative ownership model.
+        </p>
+        
+        <p class="about-text">
+          Our mission is to democratize property investment by offering affordable entry points into 
+          prime locations positioned for significant capital appreciation as the Western Sydney 
+          International Airport transforms the region.
+        </p>
+
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h4>Secure Investment</h4>
+              <p>Title-backed ownership with full legal protection</p>
+            </div>
+          </div>
+
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <h4>Expert Team</h4>
+              <p>Experienced property professionals guiding you</p>
+            </div>
+          </div>
+
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <div>
+              <h4>Affordable Entry</h4>
+              <p>Start your investment journey with less capital</p>
+            </div>
+          </div>
+
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>
+            </div>
+            <div>
+              <h4>Proven Results</h4>
+              <p>Track record of successful investments</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-secondary">
+          Learn More
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ========================================
+       WHY INVEST SECTION
+  ======================================== -->
+  <section id="why-invest" class="why-invest fade-in">
+    <div class="why-invest-container">
+      <div class="why-invest-header">
+        <span class="section-label">Why Invest Now</span>
+        <h2>The Opportunity of a Generation</h2>
+        <p class="why-invest-subtitle">
+          Western Sydney is undergoing the largest urban transformation in Australian history. 
+          Position yourself before the airport opens in late 2026.
+        </p>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="why-invest-gallery">
+        <div class="gallery-item">
+          <img src="Airpot Front .webp" alt="Airport Terminal" onerror="this.style.background='rgba(255,255,255,0.1)'">
+          <div class="gallery-item-content">
+            <h4>Airport Terminal</h4>
+            <p>Western Sydney International</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="Airport Run way .jpg" alt="Airport Runway" onerror="this.style.background='rgba(255,255,255,0.1)'">
+          <div class="gallery-item-content">
+            <h4>Largest Runway</h4>
+            <p>State-of-the-art infrastructure</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="Aerotropolis.jpg" alt="Bradfield City" onerror="this.style.background='rgba(255,255,255,0.1)'">
+          <div class="gallery-item-content">
+            <h4>Bradfield City</h4>
+            <p>Australia's newest city</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="M12 .png" alt="" onerror="this.style.background='rgba(255,255,255,0.1)'">
+          <div class="gallery-item-content">
+            <h4>M12 Motorway</h4>
+            <p>Direct connectivity</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="why-invest-grid">
+        <div class="why-card">
+          <div class="why-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </div>
+          <h3>New International Airport</h3>
+          <p>Western Sydney International Airport opens late 2026, operating 24/7 and creating 20,000+ direct jobs.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M23 6l-9.5 9.5-5-5L1 18"/><polyline points="17,6 23,6 23,12"/></svg>
+          </div>
+          <h3>Rapid Value Growth</h3>
+          <p>Land prices in the Bringelly corridor are already rising 20-40% annually. Early investors benefit most.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card-icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16,8 20,8 23,11 23,16 16,16 16,8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Infrastructure Boom</h3>
+          <p>M12 motorway, Sydney Metro Western Sydney, and Bradfield City Centre are transforming the region.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       NEWS TICKER SECTION
+  ======================================== -->
+  <section class="news-ticker-section fade-in">
+    <div class="news-ticker-header">
+      <span class="section-label">Latest News & Insights</span>
+      <h2>What We're About</h2>
+    </div>
+
+    <div class="ticker-wrapper">
+      <div class="ticker-track" id="tickerTrack">
+        <!-- Item 1 -->
+        <div class="ticker-item">
+          <div class="ticker-item-image">
+            <img src="templete.png" alt="Western Sydney Airport" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+          </div>
+          <div class="ticker-item-content">
+            <span class="ticker-item-tag">Video</span>
+            <h4>Western Sydney Airport Overview</h4>
+            <p>Learn about the upcoming Western Sydney International Airport opening in 2026.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="ticker-item">
+          <div class="ticker-item-image">
+            <img src="tempelte 2.png" alt="Land Investment" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+          </div>
+          <div class="ticker-item-content">
+            <span class="ticker-item-tag">Investment</span>
+            <h4>Land Investment Opportunities</h4>
+            <p>Explore the benefits of investing in Bringelly land before the airport opens.</p>
+          </div>
+        </div>
+
+
+        <!-- Item 4 -->
+        <div class="ticker-item">
+          <div class="ticker-item-image">
+            <img src="sydney price 2020.png" alt="Sydney 2030" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+          </div>
+          <div class="ticker-item-content">
+            <span class="ticker-item-tag">Forecast</span>
+            <h4>Sydney Property Prediction 2030</h4>
+            <p>Australia's financial capital continues strong population and price growth.</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="ticker-item">
+          <div class="ticker-item-image">
+            <img src="M12 .png" alt="M12 Motorway" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+          </div>
+          <div class="ticker-item-content">
+            <span class="ticker-item-tag">Infrastructure</span>
+            <h4>M12 Motorway Progress</h4>
+            <p>M12 motorway with metro lines rapidly progressing in Western Sydney.</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="ticker-item">
+          <div class="ticker-item-image">
+            <img src="Aerotropolis.jpg" alt="Bradfield City" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+          </div>
+          <div class="ticker-item-content">
+            <span class="ticker-item-tag">Development</span>
+            <h4>Bradfield City Centre</h4>
+            <p>Australia's first new city in over 100 years taking shape in Western Sydney.</p>
+          </div>
+        </div>
+
+        <!-- Duplicate items for seamless loop -->
+        <div class="ticker-item">
+          <div class="ticker-item-image">
+            <img src="templete.png" alt="Western Sydney Airport" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+          </div>
+          <div class="ticker-item-content">
+            <span class="ticker-item-tag">Video</span>
+            <h4>Western Sydney Airport Overview</h4>
+            <p>Learn about the upcoming Western Sydney International Airport opening in 2026.</p>
+          </div>
+        </div>
+
+        <div class="ticker-item">
+          <div class="ticker-item-image">
+            <img src="tempelte 2.png" alt="Land Investment" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+          </div>
+          <div class="ticker-item-content">
+            <span class="ticker-item-tag">Investment</span>
+            <h4>Land Investment Opportunities</h4>
+            <p>Explore the benefits of investing in Bringelly land before the airport opens.</p>
+          </div>
+        </div>
+
+        <div class="ticker-item">
+          <div class="ticker-item-image">
+            <img src="sydney price 2020.png" alt="Price Growth" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+          </div>
+          <div class="ticker-item-content">
+            <span class="ticker-item-tag">Market Update</span>
+            <h4>Western Sydney Price Growth</h4>
+            <p>Hotspots experiencing rapid price growth in the Western Sydney corridor.</p>
+          </div>
+        </div>
+
+        
+
+        <div class="ticker-item">
+          <div class="ticker-item-image">
+            <img src="M12 .png" alt="M12 Motorway" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+          </div>
+          <div class="ticker-item-content">
+            <span class="ticker-item-tag">Infrastructure</span>
+            <h4>M12 Motorway Progress</h4>
+            <p>M12 motorway with metro lines rapidly progressing in Western Sydney.</p>
+          </div>
+        </div>
+
+
+        <div class="ticker-item">
+          <div class="ticker-item-image">
+            <img src="sydney price 2020.png" alt="Sydney 2030" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+          </div>
+          <div class="ticker-item-content">
+            <span class="ticker-item-tag">Forecast</span>
+            <h4>Sydney Property Prediction 2030</h4>
+            <p>Australia's financial capital continues strong population and price growth.</p>
+          </div>
+        </div>
+
+        
+        <div class="ticker-item">
+          <div class="ticker-item-image">
+            <img src="bradely.png" alt="Bradfield City" onerror="this.style.background='linear-gradient(135deg, #e2e8f0, #cbd5e1)'">
+          </div>
+          <div class="ticker-item-content">
+            <span class="ticker-item-tag">Development</span>
+            <h4>Bradfield City Centre</h4>
+            <p>Australia's first new city in over 100 years taking shape in Western Sydney.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FEATURED PROJECT SECTION
+  ======================================== -->
+  <section id="project" class="featured-project fade-in">
+    <div class="featured-project-container">
+      <div class="featured-project-header">
+        <span class="section-label">Featured Project</span>
+        <h2>Bringelly Grove</h2>
+        <p class="featured-project-subtitle">
+          Prime land investment opportunity in Western Sydney's fastest-growing corridor.
+        </p>
+      </div>
+
+      <div class="project-showcase">
+        <div class="project-images">
+          <!-- Main Image -->
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+              <span>Main Project Image</span>
+            </div>
+            <img src="72 Carr Road.png" alt="Bringelly Grove Main View" onerror="this.style.display='none'">
+          </div>
+          
+          <!-- Secondary Images -->
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+              <span>Location Image</span>
+            </div>
+            <img src="Bringelly.png" alt="Project Location" onerror="this.style.display='none'">
+          </div>
+          
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+              <span>Available Plots Image</span>
+            </div>
+            <img src="greendale .png" alt="Available Plots" onerror="this.style.display='none'">
+          </div>
+        </div>
+
+        <div class="project-details">
+          <span class="project-badge">Now Selling</span>
+          <h3>Bringelly Grove </h3>
+          
+          <div class="project-location">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Bringelly, NSW 2556
+          </div>
+
+          <div class="project-stats">
+            <div class="project-stat">
+              <div class="project-stat-value">Shares</div>
+              <div class="project-stat-label">Limited Lots Only </div>
+            </div>
+            <div class="project-stat">
+              <div class="project-stat-value">5km </div>
+              <div class="project-stat-label">From Airport (Rerial View )</div>
+            </div>
+            <div class="project-stat">
+              <div class="project-stat-value">High </div>
+              <div class="project-stat-label">Growth Potential</div>
+            </div>
+            <div class="project-stat">
+              <div class="project-stat-value">2026</div>
+              <div class="project-stat-label">Airport Opens</div>
+            </div>
+          </div>
+
+          <ul class="project-features-list">
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+              Share land (co-operative model)
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+              Near Western Sydney Airport
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+              M12 Motorway access
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+              Bradfield City Centre proximity
+            </li>
+          </ul>
+
+          <div class="project-cta">
+            <a href="#contact" class="btn btn-primary">Enquire Now</a>
+            <a href="tel:+61123456789" class="btn btn-outline-dark">Call Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       OUR PROJECT LOCATIONS SECTION
+  ======================================== -->
+  <section id="locations" class="project-locations fade-in">
+    <div class="project-locations-container">
+      <div class="project-locations-header">
+        <span class="section-label">Our Project Locations</span>
+        <h2>Investment Opportunities Across NSW</h2>
+        <p class="project-locations-subtitle">
+          Explore our carefully selected land investment projects in high-growth corridors.
+        </p>
+      </div>
+
+      <div class="locations-grid">
+        <!-- Location 1 - Greendale -->
+        <div class="location-card">
+          <div class="location-card-image">
+            <div class="location-img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+              <span>Greendale Image</span>
+            </div>
+            <img src="greendale .png" alt="Greendale Road Project" onerror="this.style.display='none'">
+            <div class="location-card-badge">Available</div>
+          </div>
+          <div class="location-card-content">
+            <h3>Greendale Road</h3>
+            <div class="location-card-address">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Greendale, NSW
+             Land size: 150 Acres / 607,028 m²
+            </div>
+
+            
+            <ul class="location-card-features">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                Regional Growth Hub
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                Infrastructure Investment Zone
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                Commercial Development Potential
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                Strong Population Growth
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary btn-sm">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Location 2 - Marulan -->
+        <div class="location-card">
+          <div class="location-card-image">
+            <div class="location-img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+              <span>Marulan Image</span>
+            </div>
+            <img src="Marulan.png" alt="Marulan Estate Project" onerror="this.style.display='none'">
+            <div class="location-card-badge">New Listing</div>
+          </div>
+          <div class="location-card-content">
+            <h3>Marulan Estate</h3>
+            <div class="location-card-address">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Marulan, NSW 2579
+              Land size: 100 Acres / 404,686 m²
+            </div>
+            <ul class="location-card-features">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                Southern Highlands Corridor
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                Hume Highway Connectivity
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                Agricultural Land Potential
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                Affordable Entry Point
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary btn-sm">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Location 3 - Windellama -->
+        <div class="location-card">
+          <div class="location-card-image">
+            <div class="location-img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+              <span>Windellama</span>
+            </div>
+            <img src="windellama.png" alt="Windellama Project" onerror="this.style.display='none'">
+            <div class="location-card-badge">New Listing </div>
+          </div>
+          <div class="location-card-content">
+            <h3>Windellama</h3>
+            <div class="location-card-address">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+               Windellama, NSW 2580
+              Land size: 554,993 m² / 137.14 Acres
+            </div>
+            <ul class="location-card-features">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                Agricultural Farm in Regional 
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                Bushfire Management Planning Control 
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                Cloest  to the Olellan Ford Road 
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+                
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary btn-sm">Enquire Now </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* ========================================
+       PROJECT LOCATIONS SECTION
+    ======================================== */
+    .project-locations {
+      padding: 6rem 2rem;
+      background: var(--primary);
+      position: relative;
+    }
+
+    .project-locations::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(201, 169, 98, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(201, 169, 98, 0.08) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    .project-locations-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .project-locations-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .project-locations .section-label {
+      color: var(--accent-light);
+    }
+
+    .project-locations .section-label::before {
+      background: var(--accent-light);
+    }
+
+    .project-locations h2 {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .project-locations-subtitle {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 1.125rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .locations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .location-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .location-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(201, 169, 98, 0.3);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .location-card-image {
+      position: relative;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .location-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-slow);
+    }
+
+    .location-card:hover .location-card-image img {
+      transform: scale(1.1);
+    }
+
+    .location-img-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .location-img-placeholder svg {
+      width: 48px;
+      height: 48px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5;
+      margin-bottom: 0.5rem;
+    }
+
+    .location-img-placeholder span {
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .location-card-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .location-card-content {
+      padding: 1.75rem;
+    }
+
+    .location-card h3 {
+      color: var(--white);
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .location-card-address {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9375rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .location-card-address svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2;
+      flex-shrink: 0;
+    }
+
+    .location-card-features {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .location-card-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.875rem;
+      margin-bottom: 0.625rem;
+    }
+
+    .location-card-features li:last-child {
+      margin-bottom: 0;
+    }
+
+    .location-card-features svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2.5;
+      flex-shrink: 0;
+    }
+
+    .btn-sm {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.875rem;
+      width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+      .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .locations-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+
+  <!-- ========================================
+       SERVICES SECTION
+  ======================================== -->
+  <section id="services" class="services fade-in">
+    <div class="services-container">
+      <div class="services-header">
+        <span class="section-label">Our Services</span>
+        <h2>Comprehensive Investment Support</h2>
+        <p class="services-subtitle">
+          From initial consultation to post-purchase management, we guide you every step of the way.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-number">01</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+          </div>
+          <h3>Land Sharing Investment</h3>
+          <p>Fractional ownership with prime location benefits, focused on long-term capital growth.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-number">02</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Due Diligence Reports</h3>
+          <p>Comprehensive zoning, flood, bushfire, and title assessments with plain-English summaries.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-number">03</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12,2 2,7 12,12 22,7 12,2"/><polyline points="2,17 12,22 22,17"/><polyline points="2,12 12,17 22,12"/></svg>
+          </div>
+          <h3>Development Feasibility</h3>
+          <p>Subdivision analysis, DA likelihood estimates, and long-term capital growth projections.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-number">04</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>
+          </div>
+          <h3>Settlement Support</h3>
+          <p>Full conveyancing coordination, contract review, and settlement day assistance.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-number">05</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Post-Purchase Management</h3>
+          <p>Land leasing options, maintenance referrals, and annual value tracking reports.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-number">06</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Consultation & Advisory</h3>
+          <p>Expert guidance on investment strategy, market timing, and portfolio diversification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       CONTACT SECTION
+  ======================================== -->
+  <section id="contact" class="contact fade-in">
+    <div class="contact-container">
+      <div class="contact-info">
+        <span class="section-label">Get In Touch</span>
+        <h2>Ready to Secure Your Investment?</h2>
+        <p class="contact-text">
+          Contact us today to learn more about available plots and secure your slot. 
+          We typically respond within 24 hours.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <h4>Address</h4>
+              <p>Bella Vista, NSW, Australia</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <h4>Email</h4>
+              <a href="mailto:info@smartcityproperty.com.au">info@smartcityproperty.com.au</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <h4>Phone</h4>
+              <a href="tel:+61123456789">+61 0423809842</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="interest">Project Interest</label>
+            <input type="text" id="interest" name="interest" placeholder="Which project are you interested in?">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us about your investment goals..." required></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <div class="form-checkbox">
+              <input type="checkbox" id="agreement" name="agreement" required>
+              <label for="agreement">
+                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>. 
+                SmartCity Property may contact me regarding my enquiry.
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group full-width form-submit">
+            <button type="submit" class="btn btn-secondary">
+              Send Enquiry
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22,2 15,22 11,13 2,9 22,2"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FOOTER
+  ======================================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-mark">
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path d="M9 22V12h6v10"/></svg>
+            </div>
+            <div class="logo-text" style="color: #fff;">
+              SmartCity
+              <span style="color: rgba(255,255,255,0.6);">Property</span>
+            </div>
+          </a>
+          <p>Building a smarter future with strategic land investments in Western Sydney's growth corridors.</p>
+          <div class="footer-social">
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 110-4 2 2 0 010 4z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="#project">Bringelly Grove</a></li>
+            <li><a href="#project">Greendale Road</a></li>
+            <li><a href="#project">Marulan Estate</a></li>
+            <li><a href="#contact">New Opportunities</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 SmartCity Property. All rights reserved.</p>
+        <p>Designed by Niraj Ghorsaine</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24"><polyline points="18,15 12,9 6,15"/></svg>
+  </button>
+
+  <!-- ========================================
+       JAVASCRIPT
+  ======================================== -->
+  <script>
+    // ========================================
+    // MOBILE MENU
+    // ========================================
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // ========================================
+    // NAVBAR SCROLL EFFECT
+    // ========================================
+    const navbar = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // ========================================
+    // HERO SLIDER
+    // ========================================
+    const sliderTrack = document.getElementById('sliderTrack');
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    const prevBtn = document.getElementById('sliderPrev');
+    const nextBtn = document.getElementById('sliderNext');
+    let currentSlide = 0;
+    let autoplayInterval;
+
+    function goToSlide(index) {
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
+      
+      currentSlide = index;
+      sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+      
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+      });
+
+      resetAutoplay();
+    }
+
+    function nextSlide() {
+      goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      goToSlide(currentSlide - 1);
+    }
+
+    function resetAutoplay() {
+      clearInterval(autoplayInterval);
+      autoplayInterval = setInterval(nextSlide, 6000);
+    }
+
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => goToSlide(index));
+    });
+
+    // Start autoplay
+    resetAutoplay();
+
+    // ========================================
+    // SCROLL TO TOP
+    // ========================================
+    const scrollTopBtn = document.getElementById('scrollTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ========================================
+    // FADE IN ANIMATION
+    // ========================================
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    fadeElements.forEach(el => observer.observe(el));
+
+    // ========================================
+    // SMOOTH SCROLL
+    // ========================================
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const navHeight = navbar.offsetHeight;
+          const targetPosition = target.offsetTop - navHeight;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // ========================================
+    // FORM SUBMISSION
+    // ========================================
+    const contactForm = document.getElementById('contactForm');
+    
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for your enquiry! We will contact you within 24 hours.');
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>
